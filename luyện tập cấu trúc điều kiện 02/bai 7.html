@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giải phương trình bậc 2</title>
+</head>
+<body>
+    <script>
+        var a = prompt('nhập giá trị a = ')
+        var b = prompt('nhập giá trị b = ')
+        var c = prompt('nhập giá trị c = ')
+        var deta= b*b -4*a*c;
+        if (a==0) {
+            if (b==0) {
+                if (c==0) {
+                    alert("pt vô số nghiệm")
+                } else 
+                alert("vô nghiệm")
+            } else x = -c/b;
+            alert('x ='+ x)
+        } else if (deta>0) {
+            x1 = (-b + Math.sqrt(deta)) / (2*a)
+            x1 = (-b - Math.sqrt(deta)) / (2*a)
+            alert ('pt có 2 nghiệm là '+x1 +2)
+        } else if (deta==0) {
+            x = -b/2*a
+            alert ('pt có nghiệm kép là x1 = x2 =' +x)
+        } else alert ("pt vo nghiem")
+    </script>
+</body>
+</html>

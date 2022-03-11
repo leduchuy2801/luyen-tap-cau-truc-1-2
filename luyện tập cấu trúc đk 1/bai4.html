@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị Max trong 3 số</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("nhập giá trị a"));
+        var b = parseFloat(prompt("nhập giá trị b"));
+        var c = parseFloat(prompt("nhập giá trị c"));
+        if (a>b && a>c){
+             alert("số lớn nhất là:" +a);
+        } else if (a<c && b<c){
+            alert("số lớn nhất là:" +c);
+        }else if (a<b && b>c){
+              alert("số lớn nhất là:" +b);
+        }else {
+            alert("bang nhau");
+        }
+    
+    </script>
+</body>
+</html>
